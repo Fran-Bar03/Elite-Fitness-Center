@@ -99,13 +99,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Btn-inicio.aspx" />
+    <Content Include="Btn-inicio.css" />
+    <Content Include="img\ImagenFondo.PNG" />
     <Content Include="agregarclase.css" />
     <Content Include="Calculadora.aspx" />
     <Content Include="calculadora.css" />
     <Content Include="Clases.aspx" />
     <Content Include="clases.css" />
-    <Content Include="Contact.aspx" />
     <Content Include="Contactanos.aspx" />
     <Content Include="contactanos.css" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -134,7 +135,6 @@
     <Content Include="css\Pago.css" />
     <Content Include="css\slicknav.min.css" />
     <Content Include="css\style.css" />
-    <Content Include="Default.aspx" />
     <Content Include="DetallesClase.aspx" />
     <Content Include="detallesclase.css" />
     <Content Include="favicon.ico" />
@@ -178,8 +178,15 @@
     <Content Include="js\main.js" />
     <Content Include="js\masonry.pkgd.min.js" />
     <Content Include="js\owl.carousel.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="NuevaContraseña.aspx" />
+    <Content Include="NuevaContraseña.css" />
+    <Content Include="NuevaCuenta.css" />
     <Content Include="Pagos.aspx" />
     <Content Include="pagos.css" />
+    <Content Include="RecuperarContraseña.aspx" />
+    <Content Include="RecuperarContraseña.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -211,6 +218,7 @@
     <Content Include="Inicio.aspx" />
     <Content Include="img\team\carlos-belcast-v0-rt6zt4kl86vc1.webp" />
     <Content Include="AgregarClase.aspx" />
+    <Content Include="NuevaCuenta.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -248,12 +256,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Btn-inicio.aspx.cs">
+      <DependentUpon>Btn-inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Btn-inicio.aspx.designer.cs">
+      <DependentUpon>Btn-inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Calculadora.aspx.cs">
@@ -270,26 +278,12 @@
     <Compile Include="Clases.aspx.designer.cs">
       <DependentUpon>Clases.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contactanos.aspx.cs">
       <DependentUpon>Contactanos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contactanos.aspx.designer.cs">
       <DependentUpon>Contactanos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="DetallesClase.aspx.cs">
       <DependentUpon>DetallesClase.aspx</DependentUpon>
@@ -301,6 +295,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaContraseña.aspx.cs">
+      <DependentUpon>NuevaContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevaContraseña.aspx.designer.cs">
+      <DependentUpon>NuevaContraseña.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pagos.aspx.cs">
       <DependentUpon>Pagos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -309,6 +317,13 @@
       <DependentUpon>Pagos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperarContraseña.aspx.cs">
+      <DependentUpon>RecuperarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperarContraseña.aspx.designer.cs">
+      <DependentUpon>RecuperarContraseña.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -323,6 +338,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -350,6 +366,13 @@
     </Compile>
     <Compile Include="AgregarClase.aspx.designer.cs">
       <DependentUpon>AgregarClase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaCuenta.aspx.cs">
+      <DependentUpon>NuevaCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NuevaCuenta.aspx.designer.cs">
+      <DependentUpon>NuevaCuenta.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
