@@ -1,0 +1,295 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Page Preloader */
+#preloder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #f36100;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Header */
+.header-section {
+    background: #000;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+    .header-section .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-section .logo a {
+        display: block;
+        width: 100px;
+    }
+
+    .header-section .nav-menu ul {
+        display: flex;
+        align-items: center;
+    }
+
+        .header-section .nav-menu ul li {
+            margin-right: 30px;
+        }
+
+            .header-section .nav-menu ul li a {
+                font-size: 16px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+    .header-section .canvas-open {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+    .hero-section .hs-slider .hs-item {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .hero-section .hs-slider .hs-item .hi-text {
+            color: #fff;
+            max-width: 600px;
+        }
+
+            .hero-section .hs-slider .hs-item .hi-text span {
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .hero-section .hs-slider .hs-item .hi-text h1 {
+                font-size: 48px;
+                font-weight: 700;
+                margin: 20px 0;
+            }
+
+            .hero-section .hs-slider .hs-item .hi-text a {
+                display: inline-block;
+                padding: 10px 20px;
+                background: #f36100;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+/* ChoseUs Section */
+.choseus-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+    .choseus-section .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+        .choseus-section .section-title span {
+            font-size: 20px;
+            color: #f36100;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .choseus-section .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+    .choseus-section .cs-item {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .choseus-section .cs-item span {
+            font-size: 48px;
+            color: #f36100;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .choseus-section .cs-item h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+/* Classes Section */
+.classes-section {
+    padding: 80px 0;
+    background: #f7f7f7;
+}
+
+    .classes-section .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+        .classes-section .section-title span {
+            font-size: 20px;
+            color: #f36100;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .classes-section .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+    .classes-section .class-item {
+        background: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+        .classes-section .class-item .ci-pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .classes-section .class-item .ci-text {
+            padding: 20px;
+        }
+
+            .classes-section .class-item .ci-text span {
+                display: block;
+                font-size: 16px;
+                color: #f36100;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .classes-section .class-item .ci-text h5 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .classes-section .class-item .ci-text a {
+                display: inline-block;
+                font-size: 16px;
+                color: #f36100;
+            }
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+    .pricing-section .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+        .pricing-section .section-title span {
+            font-size: 20px;
+            color: #f36100;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .pricing-section .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+    .pricing-section .ps-item {
+        background: #f7f7f7;
+        text-align: center;
+        padding: 40px 20px;
+        margin-bottom: 30px;
+    }
+
+        .pricing-section .ps-item h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .pricing-section .ps-item .pi-price h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #f36100;
+            margin-bottom: 20px;
+        }
+
+        .pricing-section .ps-item ul {
+            margin-bottom: 20px;
+        }
+
+            .pricing-section .ps-item ul li {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+        .pricing-section .ps-item .primary-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f36100;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight:  700;
+        }
