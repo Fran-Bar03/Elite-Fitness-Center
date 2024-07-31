@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Gym
 {
-    public partial class SiteMaster : MasterPage
+    public partial class NuevaContraseña : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
