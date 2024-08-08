@@ -15,9 +15,10 @@
             </div>
             <h1>Log In</h1>
             <form action="#" method="post">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
+                <asp:Textbox ID="Email" runat="server"> </asp:Textbox>
+                <asp:Textbox ID="Pass" runat="server"> </asp:Textbox>
                 <asp:Button ID="Ingresar" runat="server" Text="Ingresar" OnClick="Ingresar_Click" />
+                <asp:Label ID="Lbmensaje" runat="server" Text="" Font-bold="true" forecolor="Orange"></asp:Label>
             </form>
             </div>
         </div>

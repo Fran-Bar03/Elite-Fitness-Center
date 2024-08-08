@@ -8,17 +8,20 @@ namespace Gym
 {
     public class Usuario
     {
-        public string Email { get; set; }
-        public string Contraseña { get; set; }
+        private string email;
+        private string contraseña;
+        private int tipo_usuario;
 
-        public int Tipo_Usuario { get; set; }
-
-        public Usuario(string email, string contraseña, int tipo_Usuario)
+        public Usuario(string email, string contrasena, int tipo_usuario)
         {
-            Email = email;
-            Contraseña = contraseña;
-            Tipo_Usuario = tipo_Usuario;
+            this.Email = email;
+            this.Contraseña = contrasena;
+            this.Tipo_Usuario = tipo_usuario;
         }
+
+        public string Email { get => email; set => email = value; }
+        public string Contraseña { get => contraseña; set => contraseña = value; }
+        public int Tipo_Usuario { get => tipo_usuario; set => tipo_usuario = value; }
 
     }
 }
